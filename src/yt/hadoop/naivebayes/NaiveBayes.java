@@ -55,7 +55,6 @@ public class NaiveBayes extends Configured implements Tool {
 			Path docNumInClass = new Path(Utils.DOC_NUM_IN_CLASS_OUTPUT_PATH + "/part-r-00000");
 			Path eachWordNumInClass = new Path(Utils.EACH_WORD_NUM_IN_CLASS_OUTPUT_PATH + "/part-r-00000");
 			Path allWordNumInClass = new Path(Utils.ALL_WORD_NUM_IN_CLASS_OUTPUT_PATH + "/part-r-00000");
-			Path allWordInTrainData = new Path(Utils.ALL_WORD_IN_TRAIN_OUTPUT_PATH + "/part-r-00000");
 
 			classGroup = conf.get("CLASSGROUP").split("/");
 

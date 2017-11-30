@@ -2,7 +2,6 @@ package yt.hadoop.naivebayes;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.StringReader;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.ToolRunner;
@@ -34,8 +33,8 @@ public class Main {
 		ToolRunner.run(confOfTrain, computeWordNumInClass, args);
 		
 		//统计训练集中所有的单词（不是单词数而是所有的单词）
-		CalcAllWordInTrainData computeAllWordInTrainData = new CalcAllWordInTrainData();
-		ToolRunner.run(confOfTrain, computeAllWordInTrainData, args);
+//		CalcAllWordInTrainData computeAllWordInTrainData = new CalcAllWordInTrainData();
+//		ToolRunner.run(confOfTrain, computeAllWordInTrainData, args);
 		
 		//将测试集中的所有小文件都转化成sequenceFile
 		Configuration confOfTest = new Configuration();

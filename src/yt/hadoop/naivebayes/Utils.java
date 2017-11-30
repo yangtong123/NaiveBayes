@@ -1,17 +1,17 @@
 package yt.hadoop.naivebayes;
 
 public class Utils {
-//	private static final String BASE_PATH = "hdfs://192.168.95.100:9000/user/yt/";
+	private static final String BASE_PATH = "hdfs://192.168.56.101:9000/naivebayes/yt/";
 //	private static final String BASE_PATH = "/Users/yangtong/Desktop/yt/";
-	private static final String BASE_PATH = "data/yt/";
+//	private static final String BASE_PATH = "data/yt/";
 	
-//	public static final String BASE_TRAINDATA_PATH = "hdfs://192.168.95.100:9000/user/yt/Country";
+	public static final String BASE_TRAINDATA_PATH = "hdfs://192.168.56.101:9000/naivebayes/yt/training";
 //	public static final String BASE_TRAINDATA_PATH = "/Users/yangtong/Desktop/yt/training";
-	public static final String BASE_TRAINDATA_PATH = "data/yt/training";
+//	public static final String BASE_TRAINDATA_PATH = "data/yt/training";
 	
-//	public static final String BASE_TESTDATA_PATH = "hdfs://192.168.95.100:9000/user/yt/test";
+	public static final String BASE_TESTDATA_PATH = "hdfs://192.168.56.101:9000/naivebayes/yt/test";
 //	public static final String BASE_TESTDATA_PATH = "/Users/yangtong/Desktop/yt/test";
-	public static final String BASE_TESTDATA_PATH = "data/yt/test";
+//	public static final String BASE_TESTDATA_PATH = "data/yt/test";
 	
 	public static final String SEQUENCE_INPUT_TRAIN_DATA = BASE_PATH + "InputSequenceTrainData";
 	
@@ -27,6 +27,6 @@ public class Utils {
 	
 	public static final String RESULT_OF_CLASSFICATION = BASE_PATH + "ResultOfClassfication";
 	
-//	public static String FILE = "hdfs://192.168.95.100:9000/user/yt/Country/classgroup.txt"; // 输出ClassGroup文件
-	public static String FILE = "data/yt/classgroup.txt"; // 输出ClassGroup文件
+	public static String FILE = "classgroup.txt"; // 输出ClassGroup文件
+//	public static String FILE = "data/yt/classgroup.txt"; // 输出ClassGroup文件
 }
