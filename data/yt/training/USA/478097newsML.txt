@@ -1,0 +1,17 @@
+monthly
+latest
+prior
+0.065625
+0.065625
+pay
+april
+30
+record
+april
+15note
+company
+blackrock
+investment
+quality
+municipal
+trust

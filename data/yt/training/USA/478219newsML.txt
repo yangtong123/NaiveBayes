@@ -1,0 +1,15 @@
+quarterly
+latest
+prior
+0.25
+0.25
+pay
+april
+25
+record
+april
+15note
+company
+american
+financial
+group

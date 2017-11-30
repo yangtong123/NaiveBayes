@@ -1,0 +1,17 @@
+monthly
+latest
+prior
+0.074
+0.074
+pay
+april
+25
+record
+april
+11note
+company
+oppenheimer
+multi
+sector
+income
+trust

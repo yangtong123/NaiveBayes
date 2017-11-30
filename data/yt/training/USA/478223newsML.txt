@@ -1,0 +1,14 @@
+monthly
+latest
+prior
+0.0665
+0.0665
+pay
+1
+record
+april
+11note
+company
+municipal
+advantage
+fund

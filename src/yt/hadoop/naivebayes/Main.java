@@ -54,6 +54,7 @@ public class Main {
 			sb.append(s);
 		}
 		in.close();
+		System.out.println(sb.toString());
 		confOfBayes.set("CLASSGROUP", sb.toString());
 		ToolRunner.run(confOfBayes, naiveBayes, args);
 	}

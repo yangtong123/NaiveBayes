@@ -1,0 +1,16 @@
+monthly
+latest
+prior
+0.053
+0.053
+pay
+1
+record
+april
+15note
+new
+york
+tax
+exempt
+income
+fund

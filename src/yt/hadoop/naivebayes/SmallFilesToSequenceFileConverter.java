@@ -48,7 +48,7 @@ public class SmallFilesToSequenceFileConverter extends Configured implements
 		
 		Configuration conf = getConf();
 		
-		PrintWriter out = new PrintWriter(Utils.FILE);
+		PrintWriter out = null;
 		
 		Path inputPath = new Path(conf.get("INPUTPATH"));
 		Path outputPath = new Path(conf.get("OUTPUTPATH"));
@@ -57,10 +57,16 @@ public class SmallFilesToSequenceFileConverter extends Configured implements
 		FileStatus[] train_tempList = train_file.listStatus(inputPath);
 		String[] INPUT_PATH_TRAIN = new String[train_tempList.length];
 		
+		boolean flag = true;
+		
 		for (int i = 0; i < train_tempList.length; i++) {
 			INPUT_PATH_TRAIN[i] = train_tempList[i].getPath().toString();
 			if(conf.get("INPUTPATH").equals(Utils.BASE_TRAINDATA_PATH)) {
 //				Utils.CLASSGROUP += train_tempList[i].getPath().getName() + "/";
+				if (flag) {
+					out = new PrintWriter(Utils.FILE);
+					flag = false;
+				}
 				out.print(train_tempList[i].getPath().getName() + "/");
 			}
 			System.out.println("文     件：" + INPUT_PATH_TRAIN[i]);
@@ -94,7 +100,8 @@ public class SmallFilesToSequenceFileConverter extends Configured implements
 		
 		SequenceFileOutputFormat.setOutputPath(job, outputPath);
 		
-		out.close();
+		if (!flag)
+			out.close();
 
 		return job.waitForCompletion(true) ? 0 : 1;
 	}

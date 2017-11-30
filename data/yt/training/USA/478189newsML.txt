@@ -1,0 +1,14 @@
+quarterly
+latest
+prior
+0.22
+0.22
+pay
+april
+30
+record
+april
+11
+chicago
+newsdesk
+312-408-8787
